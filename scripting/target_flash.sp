@@ -2,7 +2,7 @@
 public Plugin myinfo = 
 {
 	name	= "Target Flash/Ослепить цель",
-	version	= "1.0",
+	version	= "1.0.1",
 	description	= "Админ может ослепить игрока",
 	author	= "Nek.'a 2x2 | ggwp.site)",
 	url	= "https://ggwp.site/"
@@ -66,7 +66,7 @@ Action CmdTaregetFlash(int client, any args)
 
 void PerformFlash(int client, int target, float force, float time)
 {
-	SetEntPropFloat(client, Prop_Send, "m_flFlashDuration", time);
-	SetEntPropFloat(client, Prop_Send, "m_flFlashMaxAlpha", force);
-	PrintToChat(target, "Вы ослепили [%N] на [%.2f] в течении [%.2f] секунд", target, force, time);
+	SetEntPropFloat(target, Prop_Send, "m_flFlashDuration", time);
+	SetEntPropFloat(target, Prop_Send, "m_flFlashMaxAlpha", force);
+	PrintToChat(client, "Вы ослепили [%N] на [%.2f] в течении [%.2f] секунд", target, force, time);
 }
