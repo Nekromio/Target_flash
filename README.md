@@ -3,10 +3,14 @@
 # EN
 Blinds the specified player
 
+To display in the admin menu, you must enter this code in  
+
+/addons/sourcemod/configs/adminmenu_custom.txt
+
 # RU
 Ослепляет указанного игрока
 
-Для отображения в меню админа, необходимо ввести данный код в
+Для отображения в меню админа, необходимо ввести данный код в  
 
 /addons/sourcemod/configs/adminmenu_custom.txt
 
