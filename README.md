@@ -19,13 +19,6 @@ To display in the admin menu, you must enter this code in
 {
 	"Проверка на читы"
 	{
-	
-		"Вызвать на проверку"
-		{
-			"cmd"           "sm_cc"
-			"admin"			"sm_ban"
-		}
-		
 		"Ослепить игрока"
 		{
 			"cmd"           "sm_tflash #1 #2 #3"
